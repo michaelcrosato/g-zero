@@ -1,0 +1,35 @@
+name: Bug report
+description: Report a startup or gameplay problem.
+title: "[Bug] "
+body:
+  - type: input
+    id: build
+    attributes:
+      label: Game version and build ID
+      description: Open BOOT LOG. Copy the game version and build ID.
+    validations:
+      required: true
+  - type: input
+    id: code
+    attributes:
+      label: Startup stage or error code
+      placeholder: For example B20, PIX-FLIP, or RUN-ERR
+  - type: input
+    id: platform
+    attributes:
+      label: Browser and device
+      placeholder: Browser version, operating system, device, and renderer
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: State what you did, what you expected, and what happened.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot or saved boot report
+      description: Attach a screenshot or the saved JSON report. Review it for device information before sharing. Do not include access tokens or passwords.

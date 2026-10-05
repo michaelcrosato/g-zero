@@ -1,0 +1,16 @@
+{
+  "id": "g-zero",
+  "name": "g-zero",
+  "version": "0.5.1",
+  "buildId": "GZ-0051-AD154781BE",
+  "mode": "offline",
+  "packaged": true,
+  "viewChecksum": "bc367400",
+  "file": "index.html",
+  "bytes": 3604746,
+  "sha256": "345465df32eb7086fb3b31242842b1bbf347c9c31eabbce06ec40b24f310259a",
+  "engines": {
+    "three": "0.181.0",
+    "@dimforge/rapier3d-compat": "0.19.3"
+  }
+}

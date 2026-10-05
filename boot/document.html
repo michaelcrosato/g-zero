@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#101019"><meta id="gb-csp" http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' blob: 'wasm-unsafe-eval'; style-src 'unsafe-inline'; img-src data: blob:; media-src data: blob:; font-src 'none'; connect-src 'none'; worker-src blob:; object-src 'none'; base-uri 'none'; form-action 'none'"><title>@@NAME@@ — Magnetic Grand Prix</title><link rel="icon" href="data:,"><style>@@BOOT_CSS@@</style></head><body>
+<section id="gb-root" aria-label="Game startup" data-state="BOOT">
+ <div class="gb-body">
+  <noscript><div class="gb-noscript"><strong>CAP-JS / JavaScript is disabled.</strong><br>Enable JavaScript in this browser. The game has not started.</div></noscript>
+  <header><span id="gb-brand">@@NAME@@</span><span id="gb-edition">GAMEBOOT/1 · STARTUP</span></header>
+  <p class="gb-eyebrow">STANDARD GAME STARTUP / <span id="gb-protocol">GAMEBOOT 1.0.2</span></p>
+  <h1 id="gb-state">B00 / BOOT CORE</h1>
+  <p id="gb-message" role="status" aria-live="polite">Starting the basic system checks.</p>
+  <div class="gb-progress-row"><progress id="gb-progress" value="0" max="100" aria-label="Startup checks complete"></progress><span id="gb-percent">0%</span></div>
+  <dl class="gb-diagnostics">
+   <div class="gb-pair"><dt>GAME</dt><dd id="gb-game-version">@@NAME@@ @@VERSION@@</dd></div>
+   <div class="gb-pair"><dt>BUILD</dt><dd id="gb-build">@@BUILD@@</dd></div>
+   <div class="gb-pair"><dt>PLATFORM</dt><dd id="gb-platform">Checking…</dd></div>
+   <div class="gb-pair"><dt>CONTEXT</dt><dd id="gb-context">Checking…</dd></div>
+   <div class="gb-pair"><dt>RENDERER</dt><dd id="gb-renderer">Not initialized</dd></div>
+   <div class="gb-pair"><dt>PHYSICS</dt><dd id="gb-physics">Not initialized</dd></div>
+   <div class="gb-pair gb-wide"><dt>BROWSER</dt><dd id="gb-browser">Checking…</dd></div>
+   <div class="gb-pair gb-wide"><dt>ADAPTER</dt><dd id="gb-adapter">Not initialized</dd></div>
+   <div class="gb-pair gb-wide"><dt>STAGE</dt><dd id="gb-stage">B00 / BOOT CORE</dd></div>
+  </dl>
+  <table class="gb-stage-table" id="gb-stages" aria-label="Startup stages"><tbody id="gb-stage-rows"></tbody></table>
+  <p id="gb-hint">Progress measures completed checks, not elapsed time. No game loop is running.</p>
+  <div class="gb-actions">
+   <button id="gb-copy" type="button">COPY REPORT</button><button id="gb-save" type="button">SAVE REPORT</button>
+   <button id="gb-retry" type="button" hidden>RETRY</button><button id="gb-webgl" type="button" hidden>TRY WEBGL2</button>
+   <button id="gb-fullscreen" type="button">FULL SCREEN</button><button id="gb-close" type="button" hidden>CLOSE LOG</button>
+  </div>
+  <p id="gb-feedback" role="status" aria-live="polite">Reports stay on this device. No diagnostic data is sent.</p>
+  <textarea id="gb-report-text" aria-label="Diagnostic report. Select and copy this text." readonly hidden></textarea>
+  <details class="gb-log" id="gb-log-details"><summary>STAGE LOG / ERROR DETAILS</summary><pre id="gb-log">[B00] WAIT</pre></details>
+ </div>
+</section>
+<div id="game-mount" aria-hidden="true" inert></div>
+@@SCRIPTS@@
+</body></html>

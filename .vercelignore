@@ -1,0 +1,10 @@
+g-zero-source.zip
+dist/
+docs/
+.github/
+test-results/
+__pycache__/
+.venv/
+*.pyc
+README.md
+CHANGELOG.md

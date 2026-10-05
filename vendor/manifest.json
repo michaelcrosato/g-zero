@@ -1,0 +1,20 @@
+{
+  "three-core": {
+    "file": "three.core.min.js",
+    "version": "0.181.0",
+    "bytes": 576670,
+    "sha256": "cad027313e67e9cf36e20e15735a8565615c1e5d92b5d519cafcc67e1133acc5"
+  },
+  "three-webgpu": {
+    "file": "three.webgpu.min.js",
+    "version": "0.181.0",
+    "bytes": 584943,
+    "sha256": "9c1cef549e7d37be975707414968c2699e962b623db93a25c7c56b16ef0ae725"
+  },
+  "rapier": {
+    "file": "rapier.mjs",
+    "version": "0.19.3",
+    "bytes": 2236424,
+    "sha256": "a44534fb5b339ab5aff357416cf702c69b59ea22887019fc2cee6a7e5ea25c1e"
+  }
+}

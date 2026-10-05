@@ -1,0 +1,33 @@
+PASS / All required startup stages complete
+PASS / Eight boot stages precede the game
+PASS / The boot diagnostics identify g-zero 0.5.1
+PASS / The browser title identifies g-zero
+PASS / The visible menu uses the new name
+PASS / The actual renderer is WebGL2
+PASS / The actual Rapier version is 0.19.3
+PASS / The image orientation and first frame pass
+PASS / The new debug name is available
+PASS / The player starts in position 100 of 101
+PASS / There are 100 uniquely named opponents
+PASS / There are 99 opponents ahead and one behind
+PASS / Magnetic lock and the wide two-lane track are unchanged
+PASS / The normal and boost speed targets are unchanged
+PASS / Actual physics advances the player
+PASS / All opponents move in the actual simulation
+PASS / Magnetic height remains correct
+PASS / The player remains inside the road edges
+PASS / No automatic recovery occurred
+PASS / Diagnostics pause the race
+PASS / Saved diagnostics use the new game name
+PASS / The failure and runtime report retain 101 racers
+PASS / Restart restores position 100
+PASS / The mobile viewport has no horizontal overflow
+PASS / No uncaught browser errors occurred
+PASS / No external resource requests occurred
+{
+  "checks": 26,
+  "passed": 26,
+  "loadMethod": "Unchanged HTML loaded in memory, network disabled; test query options injected",
+  "externalRequests": [],
+  "errors": []
+}

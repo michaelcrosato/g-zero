@@ -1,0 +1,577 @@
+{
+  "localFileLimit": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/g-zero/index.html?debug&renderer=webgl2",
+  "browser": "144.0.7559.96",
+  "loadMethod": "Unchanged HTML loaded in memory, network disabled; test query options injected",
+  "boot": {
+    "protocol": "GAMEBOOT/1",
+    "loaderVersion": "1.0.2",
+    "state": "RUN",
+    "stage": "B70",
+    "progress": 100,
+    "code": "B70",
+    "message": "All required systems are ready.",
+    "frames": 3,
+    "elapsedMs": 1512,
+    "stages": [
+      {
+        "id": "B00",
+        "key": "core",
+        "label": "BOOT CORE",
+        "end": 5,
+        "timeout": 5000,
+        "status": "OK",
+        "startedMs": 71,
+        "durationMs": 3
+      },
+      {
+        "id": "B10",
+        "key": "capabilities",
+        "label": "PLATFORM CHECK",
+        "end": 15,
+        "timeout": 10000,
+        "status": "WARN",
+        "startedMs": 74,
+        "durationMs": 21
+      },
+      {
+        "id": "B20",
+        "key": "renderer",
+        "label": "RENDER BACKEND",
+        "end": 40,
+        "timeout": 45000,
+        "status": "OK",
+        "startedMs": 95,
+        "durationMs": 184
+      },
+      {
+        "id": "B30",
+        "key": "physics",
+        "label": "PHYSICS ENGINE",
+        "end": 55,
+        "timeout": 30000,
+        "status": "OK",
+        "startedMs": 279,
+        "durationMs": 109
+      },
+      {
+        "id": "B40",
+        "key": "verify",
+        "label": "ENGINE SELF-TEST",
+        "end": 65,
+        "timeout": 45000,
+        "status": "OK",
+        "startedMs": 388,
+        "durationMs": 343
+      },
+      {
+        "id": "B50",
+        "key": "prepare",
+        "label": "GAME SYSTEMS",
+        "end": 85,
+        "timeout": 30000,
+        "status": "OK",
+        "startedMs": 731,
+        "durationMs": 245
+      },
+      {
+        "id": "B60",
+        "key": "frame",
+        "label": "FIRST FRAME",
+        "end": 97,
+        "timeout": 45000,
+        "status": "OK",
+        "startedMs": 976,
+        "durationMs": 419
+      },
+      {
+        "id": "B70",
+        "key": "run",
+        "label": "START GAME",
+        "end": 100,
+        "timeout": 5000,
+        "status": "OK",
+        "startedMs": 1396,
+        "durationMs": 3
+      }
+    ],
+    "failure": null,
+    "issues": [
+      {
+        "severity": "warning",
+        "code": "SAVE-OFF",
+        "stage": "B10",
+        "ms": 78,
+        "name": "Error",
+        "message": "Local records are unavailable. The race can still run.",
+        "stack": "Error: Local records are unavailable. The race can still run.\n    at Object.capabilities (<anonymous>:52:43)"
+      }
+    ],
+    "log": [
+      {
+        "n": 1,
+        "ms": 71,
+        "stage": "B00",
+        "status": "WORK",
+        "code": "B00",
+        "message": "BOOT CORE"
+      },
+      {
+        "n": 2,
+        "ms": 74,
+        "stage": "B00",
+        "status": "INFO",
+        "code": "B00",
+        "message": "Boot core ready. Engine and game payloads are inactive."
+      },
+      {
+        "n": 3,
+        "ms": 74,
+        "stage": "B00",
+        "status": "OK",
+        "code": "B00",
+        "message": "BOOT CORE complete."
+      },
+      {
+        "n": 4,
+        "ms": 74,
+        "stage": "B10",
+        "status": "WORK",
+        "code": "B10",
+        "message": "PLATFORM CHECK"
+      },
+      {
+        "n": 5,
+        "ms": 78,
+        "stage": "B10",
+        "status": "WARN",
+        "code": "SAVE-OFF",
+        "message": "Local records are unavailable. The race can still run."
+      },
+      {
+        "n": 6,
+        "ms": 95,
+        "stage": "B10",
+        "status": "INFO",
+        "code": "B10",
+        "message": "Required platform features and embedded payload checks passed."
+      },
+      {
+        "n": 7,
+        "ms": 95,
+        "stage": "B10",
+        "status": "WARN",
+        "code": "B10",
+        "message": "PLATFORM CHECK complete."
+      },
+      {
+        "n": 8,
+        "ms": 95,
+        "stage": "B20",
+        "status": "WORK",
+        "code": "B20",
+        "message": "RENDER BACKEND"
+      },
+      {
+        "n": 9,
+        "ms": 97,
+        "stage": "B20",
+        "status": "INFO",
+        "code": "B20",
+        "message": "Loading embedded Three.js r181."
+      },
+      {
+        "n": 10,
+        "ms": 175,
+        "stage": "B20",
+        "status": "INFO",
+        "code": "B20",
+        "message": "WebGL2 was selected for this startup."
+      },
+      {
+        "n": 11,
+        "ms": 279,
+        "stage": "B20",
+        "status": "OK",
+        "code": "B20",
+        "message": "RENDER BACKEND complete."
+      },
+      {
+        "n": 12,
+        "ms": 279,
+        "stage": "B30",
+        "status": "WORK",
+        "code": "B30",
+        "message": "PHYSICS ENGINE"
+      },
+      {
+        "n": 13,
+        "ms": 282,
+        "stage": "B30",
+        "status": "INFO",
+        "code": "B30",
+        "message": "Initializing embedded Rapier 0.19.3 and its WebAssembly module."
+      },
+      {
+        "n": 14,
+        "ms": 388,
+        "stage": "B30",
+        "status": "OK",
+        "code": "B30",
+        "message": "PHYSICS ENGINE complete."
+      },
+      {
+        "n": 15,
+        "ms": 388,
+        "stage": "B40",
+        "status": "WORK",
+        "code": "B40",
+        "message": "ENGINE SELF-TEST"
+      },
+      {
+        "n": 16,
+        "ms": 388,
+        "stage": "B40",
+        "status": "INFO",
+        "code": "B40",
+        "message": "Testing physics and the four-corner image orientation."
+      },
+      {
+        "n": 17,
+        "ms": 731,
+        "stage": "B40",
+        "status": "INFO",
+        "code": "B40",
+        "message": "Required engine tests passed. The pixel pass is upright."
+      },
+      {
+        "n": 18,
+        "ms": 731,
+        "stage": "B40",
+        "status": "OK",
+        "code": "B40",
+        "message": "ENGINE SELF-TEST complete."
+      },
+      {
+        "n": 19,
+        "ms": 731,
+        "stage": "B50",
+        "status": "WORK",
+        "code": "B50",
+        "message": "GAME SYSTEMS"
+      },
+      {
+        "n": 20,
+        "ms": 735,
+        "stage": "B50",
+        "status": "INFO",
+        "code": "B50",
+        "message": "Mounting the game UI and preparing the circuit."
+      },
+      {
+        "n": 21,
+        "ms": 976,
+        "stage": "B50",
+        "status": "OK",
+        "code": "B50",
+        "message": "GAME SYSTEMS complete."
+      },
+      {
+        "n": 22,
+        "ms": 976,
+        "stage": "B60",
+        "status": "WORK",
+        "code": "B60",
+        "message": "FIRST FRAME"
+      },
+      {
+        "n": 23,
+        "ms": 986,
+        "stage": "B60",
+        "status": "INFO",
+        "code": "B60",
+        "message": "Compiling game shaders and drawing the first frame."
+      },
+      {
+        "n": 24,
+        "ms": 1395,
+        "stage": "B60",
+        "status": "OK",
+        "code": "B60",
+        "message": "FIRST FRAME complete."
+      },
+      {
+        "n": 25,
+        "ms": 1396,
+        "stage": "B70",
+        "status": "WORK",
+        "code": "B70",
+        "message": "START GAME"
+      },
+      {
+        "n": 26,
+        "ms": 1399,
+        "stage": "B70",
+        "status": "OK",
+        "code": "B70",
+        "message": "START GAME complete."
+      },
+      {
+        "n": 27,
+        "ms": 1399,
+        "stage": "B70",
+        "status": "OK",
+        "code": "RUN",
+        "message": "All required systems are ready."
+      }
+    ],
+    "game": {
+      "id": "g-zero",
+      "name": "g-zero",
+      "version": "0.5.1",
+      "buildId": "GZ-0051-1E626A55F0"
+    },
+    "diagnostics": {
+      "game": {
+        "id": "g-zero",
+        "name": "g-zero",
+        "version": "0.5.1",
+        "buildId": "GZ-0051-1E626A55F0"
+      },
+      "mode": "offline",
+      "engines": {
+        "three": "0.181.0",
+        "rapierPackage": "0.19.3",
+        "rapierWasm": "0.19.3"
+      },
+      "platform": {
+        "name": "Linux x86_64",
+        "browser": "Chrome 144.0.0.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "protocol": "about:",
+        "secureContext": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "pixelRatio": 1
+      },
+      "renderer": "WEBGL2 / THREE R181",
+      "adapter": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "physics": "RAPIER 0.19.3 / WASM 0.19.3",
+      "capabilities": {
+        "wasm": true,
+        "blobModules": true,
+        "animationFrame": true,
+        "modernArrays": true,
+        "canvas2D": true,
+        "webgpuExposed": false,
+        "webgl2Exposed": true,
+        "fullscreen": true,
+        "audio": true,
+        "gamepad": true,
+        "touch": false,
+        "resizeObserver": true,
+        "storage": false
+      },
+      "tests": {
+        "physics": {
+          "result": "PASS",
+          "test": "dynamic body + collider + gravity step",
+          "timestep": 0.016666666666666666
+        },
+        "graphics": {
+          "result": "PASS",
+          "test": "four-corner render + pixel-pass readback",
+          "direct": [
+            1,
+            3,
+            2,
+            4
+          ],
+          "processed": [
+            1,
+            3,
+            2,
+            4
+          ],
+          "screen": "PASS"
+        },
+        "firstFrame": {
+          "result": "PASS",
+          "gameLoopStarted": false
+        }
+      },
+      "payloads": {
+        "three-core": {
+          "checksum": "5a20d011",
+          "bytes": 576670,
+          "version": "0.181.0"
+        },
+        "three-webgpu": {
+          "checksum": "c624aa25",
+          "bytes": 584943,
+          "version": "0.181.0"
+        },
+        "rapier": {
+          "checksum": "60f5ab5d",
+          "bytes": 2236424,
+          "version": "0.19.3"
+        },
+        "engines": {
+          "checksum": "cfef01c5",
+          "bytes": 13270,
+          "version": "0.5.1"
+        },
+        "game": {
+          "checksum": "6decf42e",
+          "bytes": 81066,
+          "version": "0.5.1"
+        }
+      }
+    },
+    "gameState": {
+      "mode": "menu",
+      "speed": 0,
+      "energy": 100,
+      "raceTime": 0,
+      "penalty": 0,
+      "lap": 1,
+      "position": {
+        "x": 27.04019546508789,
+        "y": 38.223228454589844,
+        "z": -10.001976013183594
+      },
+      "rank": 100,
+      "racerCount": 101,
+      "rivalCount": 100,
+      "startingPosition": 100,
+      "magneticLock": true,
+      "clearance": 3.3999983056407883,
+      "magneticHeight": 3.4,
+      "edgeLimit": 47,
+      "raceDistance": 10,
+      "visibleRivals": 58,
+      "s": 10,
+      "lateralOffset": 27,
+      "hoverContact": true,
+      "courseLength": 5655.052494718575,
+      "trackWidth": 108,
+      "lanes": 2,
+      "assist": false,
+      "backend": "WEBGL2",
+      "topSpeed": 516,
+      "boostSpeed": 732,
+      "bestLap": Infinity,
+      "wallHits": 0,
+      "recoveries": 0
+    }
+  },
+  "checks": [
+    {
+      "name": "All required startup stages complete",
+      "result": "PASS"
+    },
+    {
+      "name": "Eight boot stages precede the game",
+      "result": "PASS"
+    },
+    {
+      "name": "The boot diagnostics identify g-zero 0.5.1",
+      "result": "PASS"
+    },
+    {
+      "name": "The browser title identifies g-zero",
+      "result": "PASS"
+    },
+    {
+      "name": "The visible menu uses the new name",
+      "result": "PASS"
+    },
+    {
+      "name": "The actual renderer is WebGL2",
+      "result": "PASS"
+    },
+    {
+      "name": "The actual Rapier version is 0.19.3",
+      "result": "PASS"
+    },
+    {
+      "name": "The image orientation and first frame pass",
+      "result": "PASS"
+    },
+    {
+      "name": "The new debug name is available",
+      "result": "PASS"
+    },
+    {
+      "name": "The player starts in position 100 of 101",
+      "result": "PASS"
+    },
+    {
+      "name": "There are 100 uniquely named opponents",
+      "result": "PASS"
+    },
+    {
+      "name": "There are 99 opponents ahead and one behind",
+      "result": "PASS"
+    },
+    {
+      "name": "Magnetic lock and the wide two-lane track are unchanged",
+      "result": "PASS"
+    },
+    {
+      "name": "The normal and boost speed targets are unchanged",
+      "result": "PASS"
+    },
+    {
+      "name": "Actual physics advances the player",
+      "result": "PASS"
+    },
+    {
+      "name": "All opponents move in the actual simulation",
+      "result": "PASS"
+    },
+    {
+      "name": "Magnetic height remains correct",
+      "result": "PASS"
+    },
+    {
+      "name": "The player remains inside the road edges",
+      "result": "PASS"
+    },
+    {
+      "name": "No automatic recovery occurred",
+      "result": "PASS"
+    },
+    {
+      "name": "Diagnostics pause the race",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved diagnostics use the new game name",
+      "result": "PASS"
+    },
+    {
+      "name": "The failure and runtime report retain 101 racers",
+      "result": "PASS"
+    },
+    {
+      "name": "Restart restores position 100",
+      "result": "PASS"
+    },
+    {
+      "name": "The mobile viewport has no horizontal overflow",
+      "result": "PASS"
+    },
+    {
+      "name": "No uncaught browser errors occurred",
+      "result": "PASS"
+    },
+    {
+      "name": "No external resource requests occurred",
+      "result": "PASS"
+    }
+  ],
+  "errors": [],
+  "externalRequests": []
+}

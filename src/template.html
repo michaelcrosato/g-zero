@@ -1,0 +1,48 @@
+<main class="shell" id="stage" data-mode="menu">
+  <header class="masthead">
+    <div class="brand"><div class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div><div class="brand-name">g-zero</div><div class="brand-sub">ANTI-GRAVITY RACING SYSTEM</div></div></div>
+    <div class="build-info"><span class="pill">THREE.JS R181</span><span class="pill">RAPIER 0.19.3</span><span class="build-id">MAGNETIC GP / 0.5.1</span></div>
+  </header>
+  <section class="frame" aria-label="g-zero game">
+    <div class="stage-head"><span><span class="live-dot"></span><span id="game-state">INITIALIZING ENGINE</span></span><span class="right">GRAND PRIX / ASTRAL RING</span></div>
+    <div class="game-body">
+      <div id="screen" tabindex="-1">
+        <canvas id="hud" width="480" height="270" aria-hidden="true" hidden></canvas>
+        <div class="vignette" aria-hidden="true"></div><div class="scanlines" aria-hidden="true"></div>
+        <section id="menu" class="overlay menu" aria-label="Main menu">
+          <div class="menu-left">
+            <p class="eyebrow">MAGNETIC LOCK / 100 RIVALS / 3× SPEED</p>
+            <h1 class="title">g-<span>zero</span></h1>
+            <p class="tagline">Old-school pixels.<br><em>No flat tracks.</em></p>
+            <button class="primary" id="start" disabled>START YOUR ENGINE <span class="arrow" aria-hidden="true">↗</span></button>
+            <p class="launch-note">PRESS <kbd>ENTER</kbd> TO RACE &nbsp; / &nbsp; F FOR FULLSCREEN</p>
+          </div>
+          <div class="menu-right">
+            <div class="track-number">CIRCUIT 01 / DUSK SECTOR</div>
+            <h2 class="track-title">ASTRAL RING</h2>
+            <div class="track-sub">3 LAPS &nbsp;·&nbsp; 100 RIVALS &nbsp;·&nbsp; 2 LANES</div>
+            <div class="track-rule"></div>
+            <div class="track-metrics"><div><strong id="track-length">— KM</strong><small>COURSE LENGTH</small></div><div><strong id="elevation-readout">— M</strong><small>ELEVATION RANGE</small></div></div>
+            <span class="track-tag" id="track-width">108 M / 2 LANES</span><p class="grid-note">START: 100 / 101 &nbsp;·&nbsp; MAGNETIC LOCK ON</p>
+          </div>
+        </section>
+        <section id="pause-panel" class="overlay modal-overlay" role="dialog" aria-modal="true" aria-labelledby="pause-title" hidden>
+          <div class="modal"><p class="eyebrow">ENGINE IDLING</p><h2 id="pause-title">TAKE A BREATHER.</h2><p>The race is paused. Your lap time is not advancing.</p><div class="modal-actions"><button id="resume" class="primary">BACK TO THE TRACK <span aria-hidden="true">↗</span></button><button id="restart" class="secondary">RESTART</button><button id="to-menu" class="secondary">MAIN MENU</button></div></div>
+        </section>
+        <section id="results" class="overlay modal-overlay" role="dialog" aria-modal="true" aria-labelledby="result-title" hidden>
+          <div class="modal"><div class="result-head"><div id="result-place" class="result-place">100</div><div><p class="eyebrow">FINAL CLASSIFICATION / 101 RACERS</p><h2 id="result-title">CIRCUIT CONQUERED.</h2></div></div>
+          <div class="result-stats"><div><small>RACE TIME</small><strong id="result-time">00:00.00</strong></div><div><small>BEST LAP</small><strong id="result-best">00:00.00</strong></div><div><small>TOP SPEED</small><strong id="result-speed">000 KM/H</strong></div></div>
+          <div id="result-laps" class="result-laps"></div><p id="result-notes" class="result-notes"></p>
+          <div class="modal-actions"><button id="again" class="primary">ONE MORE RUN <span aria-hidden="true">↗</span></button><button id="results-menu" class="secondary">MAIN MENU</button></div></div>
+        </section>
+      </div>
+    </div>
+    <div class="toolbar"><div class="toolbar-left"><button class="tool" id="pause" disabled>PAUSE</button><button class="tool setting" id="sound" aria-pressed="true" title="Toggle sound (M)">SOUND ON</button><button class="tool setting" id="assist" aria-pressed="false" title="Change steering assistance before a race">FREE STEERING</button><button class="tool setting" id="help">CONTROLS</button><button class="tool setting" id="diagnostics">BOOT LOG</button></div><div class="toolbar-right"><span class="backend" id="backend-readout" aria-live="polite">STARTING</span><span class="resolution-meta"><span id="resolution-readout">CLASSIC</span> / NEAREST / 5-BIT</span><label class="setting" for="pixels">PIXELS</label><select id="pixels" class="setting"><option value="320">COARSE</option><option value="480" selected>CLASSIC</option><option value="960">FINE</option></select><button class="tool" id="fullscreen" aria-pressed="false" title="Enter or exit fullscreen (F)">FULLSCREEN</button></div></div>
+  </section>
+  <div class="touch-controls" aria-label="Touch driving controls"><div class="touch-cluster"><button data-control="ArrowLeft" aria-label="Steer left">◀</button><button data-control="ArrowRight" aria-label="Steer right">▶</button><button data-control="ArrowDown" aria-label="Brake">BRAKE</button></div><div class="touch-cluster"><button data-control="ArrowUp" aria-label="Accelerate">GO</button><button data-control="ShiftLeft" aria-label="Boost">BOOST</button></div></div>
+  <p class="rotate-note">For a wider view, rotate your device to landscape. Touch controls appear on touch devices.</p>
+  <div class="legend"><div class="keys"><span><kbd>W A S D</kbd> or <kbd>↑ ← ↓ →</kbd> drive</span><span><kbd>SHIFT</kbd> boost</span><span><kbd>Q / E</kbd> air brakes</span><span><kbd>R</kbd> realign (+3s)</span><span><kbd>ESC</kbd> pause</span></div><div class="personal-best">LOCAL BEST <strong id="best-readout">--:--.--</strong></div></div>
+  <details class="details" id="manual"><summary>FLIGHT MANUAL &amp; BUILD NOTES</summary><div class="details-content"><div><p><strong>Hold W or ↑ to accelerate.</strong> Steer with A/D or ←/→. Hold Shift or Space to spend energy on boost. Q/E apply directional air brakes for tighter turns. R aligns your craft with the track at its current position and adds three seconds.</p><p><strong>Cyan strips give a free boost.</strong> The violet strip near the finish replenishes energy. Wall impacts also drain energy. Complete three laps to finish. Turning around at the finish does not count as a lap.</p></div><div><p><strong>A retro renderer, not a flat world.</strong> This prototype uses a 108-meter-wide, two-lane 3D course, a fixed magnetic height, edge containment, collision rails, and 100 path-driven rivals. Pixel-art ships are billboard sprites in the same 3D scene.</p><p><strong>Magnetic lock is always on.</strong> The racers cannot fall off the track. You start in position 100 of 101. You control the steering and can move across both lanes. There is no automatic lane centering. Optional light assist adjusts heading only. F enters fullscreen. P pauses. Standard gamepads: left stick/D-pad to steer, A/RT to accelerate, B to boost, LT to brake, LB/RB for air brakes. WebGPU is the primary renderer. WebGL2 is the automatic backup. WebAssembly is required. Use HTTPS or localhost for WebGPU.</p></div></div></details>
+  <footer class="footer"><span>ORIGINAL CIRCUIT. ORIGINAL PIXELS. REAL 3D.</span><span>BUILT FOR SPEED / NOT AFFILIATED WITH NINTENDO</span></footer>
+  <div id="announcer" class="sr-only" aria-live="polite"></div><div id="speed-accessible" class="sr-only" aria-live="off"></div>
+</main>

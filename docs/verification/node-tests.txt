@@ -1,0 +1,495 @@
+
+> g-zero@0.5.1 check
+> node scripts/build.mjs --check && node --test
+
+PASS / reproducible offline build / GZ-0051-1E626A55F0 / 3600274 bytes
+TAP version 13
+# Subtest: fixed eight-stage order ends in RUN only after every required hook
+ok 1 - fixed eight-stage order ends in RUN only after every required hook
+  ---
+  duration_ms: 16.492658
+  type: 'test'
+  ...
+# Subtest: progress is monotonic and reflects completed checks
+ok 2 - progress is monotonic and reflects completed checks
+  ---
+  duration_ms: 10.630947
+  type: 'test'
+  ...
+# Subtest: required renderer failure prevents physics, UI, and the game loop
+ok 3 - required renderer failure prevents physics, UI, and the game loop
+  ---
+  duration_ms: 4.047918
+  type: 'test'
+  ...
+# Subtest: each stage reports the exact failing stage
+ok 4 - each stage reports the exact failing stage
+  ---
+  duration_ms: 46.422769
+  type: 'test'
+  ...
+# Subtest: an async rejection keeps the original error detail and stack
+ok 5 - an async rejection keeps the original error detail and stack
+  ---
+  duration_ms: 4.5834
+  type: 'test'
+  ...
+# Subtest: a recovered graphics failure is a warning, not a fatal result
+ok 6 - a recovered graphics failure is a warning, not a fatal result
+  ---
+  duration_ms: 10.034244
+  type: 'test'
+  ...
+# Subtest: missing game hook is attributed to B50 and blocks RUN
+ok 7 - missing game hook is attributed to B50 and blocks RUN
+  ---
+  duration_ms: 6.653953
+  type: 'test'
+  ...
+# Subtest: a timed-out hook cannot hand off after it resolves late
+ok 8 - a timed-out hook cannot hand off after it resolves late
+  ---
+  duration_ms: 57.956637
+  type: 'test'
+  ...
+# Subtest: external cancellation during a pending hook blocks later work
+ok 9 - external cancellation during a pending hook blocks later work
+  ---
+  duration_ms: 5.913428
+  type: 'test'
+  ...
+# Subtest: the first failure stays visible and cleanup runs once
+ok 10 - the first failure stays visible and cleanup runs once
+  ---
+  duration_ms: 0.811911
+  type: 'test'
+  ...
+# Subtest: cleanup errors cannot replace the primary failure
+ok 11 - cleanup errors cannot replace the primary failure
+  ---
+  duration_ms: 0.369066
+  type: 'test'
+  ...
+# Subtest: a startup instance cannot run twice
+ok 12 - a startup instance cannot run twice
+  ---
+  duration_ms: 11.097803
+  type: 'test'
+  ...
+# Subtest: runtime failure stops the loop and preserves successful stages
+ok 13 - runtime failure stops the loop and preserves successful stages
+  ---
+  duration_ms: 7.668649
+  type: 'test'
+  ...
+# Subtest: visible-frame watchdog detects a stalled loop but ignores hidden tabs
+ok 14 - visible-frame watchdog detects a stalled loop but ignores hidden tabs
+  ---
+  duration_ms: 11.60634
+  type: 'test'
+  ...
+# Subtest: successful frames update heartbeat counters
+ok 15 - successful frames update heartbeat counters
+  ---
+  duration_ms: 0.199846
+  type: 'test'
+  ...
+# Subtest: reports use GAMEBOOT/1 and are detached snapshots
+ok 16 - reports use GAMEBOOT/1 and are detached snapshots
+  ---
+  duration_ms: 15.863928
+  type: 'test'
+  ...
+# Subtest: checksum changes when an embedded payload is damaged
+ok 17 - checksum changes when an embedded payload is damaged
+  ---
+  duration_ms: 0.234908
+  type: 'test'
+  ...
+# Subtest: log and optional issue buffers are bounded
+ok 18 - log and optional issue buffers are bounded
+  ---
+  duration_ms: 7.229985
+  type: 'test'
+  ...
+# Subtest: the first-frame hook completes before run starts
+ok 19 - the first-frame hook completes before run starts
+  ---
+  duration_ms: 12.198416
+  type: 'test'
+  ...
+# Subtest: state-machine code does not import the game, graphics, or DOM
+ok 20 - state-machine code does not import the game, graphics, or DOM
+  ---
+  duration_ms: 0.268958
+  type: 'test'
+  ...
+# Subtest: dependencies are pinned to the exact requested versions
+ok 21 - dependencies are pinned to the exact requested versions
+  ---
+  duration_ms: 5.102728
+  type: 'test'
+  ...
+# Subtest: course is approximately 5.66 km, with genuine elevation change
+ok 22 - course is approximately 5.66 km, with genuine elevation change
+  ---
+  duration_ms: 0.328066
+  type: 'test'
+  ...
+# Subtest: invalid circuit inputs are rejected
+ok 23 - invalid circuit inputs are rejected
+  ---
+  duration_ms: 0.41922
+  type: 'test'
+  ...
+# Subtest: course sampling wraps exactly at the seam
+ok 24 - course sampling wraps exactly at the seam
+  ---
+  duration_ms: 0.209259
+  type: 'test'
+  ...
+# Subtest: arc-length samples have near-uniform spacing
+ok 25 - arc-length samples have near-uniform spacing
+  ---
+  duration_ms: 0.778542
+  type: 'test'
+  ...
+# Subtest: all track frames are finite, orthonormal and upward-facing
+ok 26 - all track frames are finite, orthonormal and upward-facing
+  ---
+  duration_ms: 4.522009
+  type: 'test'
+  ...
+# Subtest: adjacent surface frames, including seam, do not flip
+ok 27 - adjacent surface frames, including seam, do not flip
+  ---
+  duration_ms: 0.356277
+  type: 'test'
+  ...
+# Subtest: interpolated frame basis remains orthonormal
+ok 28 - interpolated frame basis remains orthonormal
+  ---
+  duration_ms: 0.609512
+  type: 'test'
+  ...
+# Subtest: surface geometry has the expected sizes and no out-of-range indices
+ok 29 - surface geometry has the expected sizes and no out-of-range indices
+  ---
+  duration_ms: 1.773814
+  type: 'test'
+  ...
+# Subtest: wide surface triangles are upward-facing, nonfolded and nondegenerate
+ok 30 - wide surface triangles are upward-facing, nonfolded and nondegenerate
+  ---
+  duration_ms: 3.313933
+  type: 'test'
+  ...
+# Subtest: nearest-point projection tracks lane and height in 3D
+ok 31 - nearest-point projection tracks lane and height in 3D
+  ---
+  duration_ms: 1.762978
+  type: 'test'
+  ...
+# Subtest: nearest-point fallback recovers from a stale section hint
+ok 32 - nearest-point fallback recovers from a stale section hint
+  ---
+  duration_ms: 0.707116
+  type: 'test'
+  ...
+# Subtest: non-neighboring road regions have clearance greater than the road width
+ok 33 - non-neighboring road regions have clearance greater than the road width
+  ---
+  duration_ms: 1.21677
+  type: 'test'
+  ...
+# Subtest: boost and recharge detection matches physical strip bounds
+ok 34 - boost and recharge detection matches physical strip bounds
+  ---
+  duration_ms: 3.052551
+  type: 'test'
+  ...
+# Subtest: a forward race counts exactly three laps and records split times
+ok 35 - a forward race counts exactly three laps and records split times
+  ---
+  duration_ms: 0.368325
+  type: 'test'
+  ...
+# Subtest: back-and-forth movement across the finish cannot manufacture laps
+ok 36 - back-and-forth movement across the finish cannot manufacture laps
+  ---
+  duration_ms: 0.138775
+  type: 'test'
+  ...
+# Subtest: reverse driving never awards a lap
+ok 37 - reverse driving never awards a lap
+  ---
+  duration_ms: 0.208899
+  type: 'test'
+  ...
+# Subtest: large teleport jumps do not award checkpoint progress
+ok 38 - large teleport jumps do not award checkpoint progress
+  ---
+  duration_ms: 0.089122
+  type: 'test'
+  ...
+# Subtest: completed race is immutable under later position updates
+ok 39 - completed race is immutable under later position updates
+  ---
+  duration_ms: 0.455574
+  type: 'test'
+  ...
+# Subtest: race lap splits include an explicit recovery penalty
+ok 40 - race lap splits include an explicit recovery penalty
+  ---
+  duration_ms: 0.164793
+  type: 'test'
+  ...
+# Subtest: steering sign matches left/right in a right-handed 3D world
+ok 41 - steering sign matches left/right in a right-handed 3D world
+  ---
+  duration_ms: 0.12841
+  type: 'test'
+  ...
+# Subtest: fixed-step acceleration reaches but cannot overshoot target speed
+ok 42 - fixed-step acceleration reaches but cannot overshoot target speed
+  ---
+  duration_ms: 0.440131
+  type: 'test'
+  ...
+# Subtest: exponential damping has equivalent 30 Hz and 120 Hz response
+ok 43 - exponential damping has equivalent 30 Hz and 120 Hz response
+  ---
+  duration_ms: 0.250391
+  type: 'test'
+  ...
+# Subtest: modular distance handles both directions across the seam
+ok 44 - modular distance handles both directions across the seam
+  ---
+  duration_ms: 0.111175
+  type: 'test'
+  ...
+# Subtest: race clock formatting handles boundaries and missing records
+ok 45 - race clock formatting handles boundaries and missing records
+  ---
+  duration_ms: 0.188338
+  type: 'test'
+  ...
+# Subtest: procedural random art is deterministic
+ok 46 - procedural random art is deterministic
+  ---
+  duration_ms: 0.222389
+  type: 'test'
+  ...
+# Subtest: generated HTML has no unresolved local module imports or source placeholders
+ok 47 - generated HTML has no unresolved local module imports or source placeholders
+  ---
+  duration_ms: 27.023346
+  type: 'test'
+  ...
+# Subtest: the field contains 100 opponents and starts the player in position 100
+ok 48 - the field contains 100 opponents and starts the player in position 100
+  ---
+  duration_ms: 0.896997
+  type: 'test'
+  ...
+# Subtest: the grid has 99 opponents ahead and one behind the player
+ok 49 - the grid has 99 opponents ahead and one behind the player
+  ---
+  duration_ms: 0.49979
+  type: 'test'
+  ...
+# Subtest: invalid grid positions are rejected
+ok 50 - invalid grid positions are rejected
+  ---
+  duration_ms: 0.539949
+  type: 'test'
+  ...
+# Subtest: magnetic lock does not move the player toward the center line
+ok 51 - magnetic lock does not move the player toward the center line
+  ---
+  duration_ms: 0.775457
+  type: 'test'
+  ...
+# Subtest: large upward and downward impulses cannot change the magnetic coordinates
+ok 52 - large upward and downward impulses cannot change the magnetic coordinates
+  ---
+  duration_ms: 0.752664
+  type: 'test'
+  ...
+# Subtest: both track edges contain the whole craft
+ok 53 - both track edges contain the whole craft
+  ---
+  duration_ms: 0.132997
+  type: 'test'
+  ...
+# Subtest: unwrapped distance remains continuous at the closed-course seam
+ok 54 - unwrapped distance remains continuous at the closed-course seam
+  ---
+  duration_ms: 0.186556
+  type: 'test'
+  ...
+# Subtest: every deck face has finite axes and a constant magnetic height
+ok 55 - every deck face has finite axes and a constant magnetic height
+  ---
+  duration_ms: 5.699592
+  type: 'test'
+  ...
+# Subtest: invalid magnetic input stops instead of propagating NaN
+ok 56 - invalid magnetic input stops instead of propagating NaN
+  ---
+  duration_ms: 0.322046
+  type: 'test'
+  ...
+# Subtest: three-digit rank text is correct for the whole field
+ok 57 - three-digit rank text is correct for the whole field
+  ---
+  duration_ms: 0.293675
+  type: 'test'
+  ...
+# Subtest: the checked-in HTML exactly matches a fresh source build
+ok 58 - the checked-in HTML exactly matches a fresh source build
+  ---
+  duration_ms: 18.742467
+  type: 'test'
+  ...
+# Subtest: a second build has the same build ID and SHA-256
+ok 59 - a second build has the same build ID and SHA-256
+  ---
+  duration_ms: 94.806661
+  type: 'test'
+  ...
+# Subtest: the boot screen and game view use the g-zero name
+ok 60 - the boot screen and game view use the g-zero name
+  ---
+  duration_ms: 1.54853
+  type: 'test'
+  ...
+# Subtest: the game is complete offline HTML and contains no packager
+ok 61 - the game is complete offline HTML and contains no packager
+  ---
+  duration_ms: 5.469218
+  type: 'test'
+  ...
+# Subtest: all five payload versions, checksums, and UTF-8 byte lengths match
+ok 62 - all five payload versions, checksums, and UTF-8 byte lengths match
+  ---
+  duration_ms: 15.270881
+  type: 'test'
+  ...
+# Subtest: the game view integrity value matches the serialized view
+ok 63 - the game view integrity value matches the serialized view
+  ---
+  duration_ms: 1.275106
+  type: 'test'
+  ...
+# Subtest: the build manifest matches the exact deliverable bytes
+ok 64 - the build manifest matches the exact deliverable bytes
+  ---
+  duration_ms: 9.087768
+  type: 'test'
+  ...
+# Subtest: licenses for the game and both engines remain embedded
+ok 65 - licenses for the game and both engines remain embedded
+  ---
+  duration_ms: 1.37268
+  type: 'test'
+  ...
+# Subtest: emergency error handling is active before any engine payload
+ok 66 - emergency error handling is active before any engine payload
+  ---
+  duration_ms: 2.09641
+  type: 'test'
+  ...
+# Subtest: the source contains the new debug name and preserves the legacy test alias
+ok 67 - the source contains the new debug name and preserves the legacy test alias
+  ---
+  duration_ms: 1.476763
+  type: 'test'
+  ...
+# Subtest: the three-times speed settings are retained
+ok 68 - the three-times speed settings are retained
+  ---
+  duration_ms: 0.716159
+  type: 'test'
+  ...
+# Subtest: two equal lanes still fill the 108-unit road
+ok 69 - two equal lanes still fill the 108-unit road
+  ---
+  duration_ms: 37.056214
+  type: 'test'
+  ...
+# Subtest: the original circuit centerline is unchanged
+ok 70 - the original circuit centerline is unchanged
+  ---
+  duration_ms: 62.508911
+  type: 'test'
+  ...
+# Subtest: free steering has no turn input when the player gives none
+ok 71 - free steering has no turn input when the player gives none
+  ---
+  duration_ms: 0.240585
+  type: 'test'
+  ...
+# Subtest: speed scaling changes distance, not only the speed display
+ok 72 - speed scaling changes distance, not only the speed display
+  ---
+  duration_ms: 0.409286
+  type: 'test'
+  ...
+# Subtest: viewport sizing still fills portrait, landscape, and ultrawide displays
+ok 73 - viewport sizing still fills portrait, landscape, and ultrawide displays
+  ---
+  duration_ms: 0.194447
+  type: 'test'
+  ...
+# Subtest: the pixel pass uses r181 QuadMesh screen UVs, not PlaneGeometry UVs
+ok 74 - the pixel pass uses r181 QuadMesh screen UVs, not PlaneGeometry UVs
+  ---
+  duration_ms: 6.471183
+  type: 'test'
+  ...
+# Subtest: the pixel pass does not require a floating-point color target
+ok 75 - the pixel pass does not require a floating-point color target
+  ---
+  duration_ms: 2.451541
+  type: 'test'
+  ...
+# Subtest: the graphics self-test compares four corners before gameplay loads
+ok 76 - the graphics self-test compares four corners before gameplay loads
+  ---
+  duration_ms: 1.387622
+  type: 'test'
+  ...
+# Subtest: game preparation does not initialize another renderer or physics module
+ok 77 - game preparation does not initialize another renderer or physics module
+  ---
+  duration_ms: 2.817758
+  type: 'test'
+  ...
+# Subtest: the game has a gated run method and catches physics and draw exceptions
+ok 78 - the game has a gated run method and catches physics and draw exceptions
+  ---
+  duration_ms: 0.925139
+  type: 'test'
+  ...
+# Subtest: fullscreen covers the boot view as well as the game
+ok 79 - fullscreen covers the boot view as well as the game
+  ---
+  duration_ms: 0.517796
+  type: 'test'
+  ...
+# Subtest: game UI is inert data until B50
+ok 80 - game UI is inert data until B50
+  ---
+  duration_ms: 2.002443
+  type: 'test'
+  ...
+1..80
+# tests 80
+# suites 0
+# pass 80
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 412.680173
